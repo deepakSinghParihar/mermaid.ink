@@ -2,7 +2,7 @@ const createDebug = require('debug');
 const createApp = require('./app');
 
 const debug = createDebug('app:index');
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
 
 (async () => {
   const { app } = await createApp();
