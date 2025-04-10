@@ -6,6 +6,6 @@ const PORT = process.env.PORT || 8000;
 
 (async () => {
   const { app } = await createApp();
-  await app.listen(PORT);
+  await app.listen(PORT, '0.0.0.0');
   debug('server listening on %o', PORT);
 })();
